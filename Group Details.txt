@@ -1,7 +1,0 @@
-    Name           ID
-
-Mohammad Hashir	18231288
-Syed Mudassir	18234391
-Viraj Dhote	18230717
-Sesno Ileozor	13467732
-Vikas Muniraju	18230285
