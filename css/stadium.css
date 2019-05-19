@@ -1,0 +1,208 @@
+#showcase{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align:center;
+  background-color: white;
+
+
+}
+.fixture{
+  background-image: url("../Image/fixture/fixturebackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+#team{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+
+#timer{
+  min-height:550px;
+  background:url('../image/homepage.jpg') no-repeat -200px -350px;
+  text-align:center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+#timer h2{
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+#timer p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 160px;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 620px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #000000;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-box-front img{
+  width:630px;
+  height: 400px;
+}
+
+
+@media screen and (max-width:768px )and (min-width:420px)
+{
+  #timer h2{
+    font-size: 40px;
+  }
+  #timer p{
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width:420px){
+  .forward{
+    display: grid;
+  }
+.midfielder{
+  display: grid;
+}
+  .Defender{
+display: grid;
+  }
+  #timer h2{
+    font-size: 20px;
+  }
+  #timer p{
+    font-size: 40px;
+  }
+  .fixture{
+    background-image: url("../Image/fixture/fixturemobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+      background-position: center;
+    }
+    .flip-box {
+      background-color: transparent;
+      width: 390px;
+      height: 270px;
+      border: 1px solid #f1f1f1;
+
+    }
+    .flip-box-front img{
+      width: 390px;
+      height: 270px;
+    }
+    .flip-box-inner {
+      width: 390px;
+      height: 270px;
+      text-align: center;
+
+    }
+
+
+
+}
